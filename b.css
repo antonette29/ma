@@ -1,0 +1,692 @@
+/*nav*/
+.topnav {
+  background: #922B21;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.5s;
+  padding: 0;
+}
+
+.active {
+  background: #000;
+}
+
+.topnav li {
+  display: inline-block;
+  margin: 0;
+}
+
+.topnav li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all ease 0.3s;
+}
+
+.topnav li a:hover {
+  background: #000;  
+}
+
+.topnav .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.responsive {
+   transition: all ease 0.5s;
+}
+
+@media screen and (max-width: 640px) {
+  .topnav li:not(:first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li,
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/*main pic*/
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_1280.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#home h1 {
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+#home p {
+  color: white;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 860px) {
+  #home h1 {
+    margin-top: 16rem;
+    text-align: center;
+  }
+
+  #home p {
+    text-align: center;
+    margin: 0 2rem;
+  }
+}
+
+
+
+
+
+/*Product Grid Container*/
+h3 {
+  text-align: center;
+  font-family-2: "Baloo Bhai 2", cursive;
+   cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(138, 16, 16);
+  transition: transform 0.3s ease-in-out;
+  font-family: var(--font-family-2);
+}
+ body {
+    margin: 0px;
+    padding: 0;
+   font-family: "Baloo Bhai 2", cursive;
+    background-color: #FEF9E7;
+  }
+  
+  .navigation-menu {
+    float: right;
+    margin: 0 ;
+    padding: 0;
+  }
+  
+  .navigation-menu a {
+    text-decoration: none;
+  }
+  
+  .nav-container {
+    background: #922B21;
+    height: 60px;
+  }
+  
+  .nav-container li {
+    display: inline-block;
+    list-style: none;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+  }
+  
+  .nav-container li:hover {
+    background: #922B21;
+    transition: background 0.3s;
+  }
+  
+  .link {
+    color: #922B21;
+    text-decoration: none;
+  }
+  
+  .food-tilte {
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin :20px;
+
+  }
+
+
+  .main-banner img {
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .food-list-wraper {
+    text-align: center;
+    margin-right: 70px;
+    margin :20px;
+  }
+  
+  .food-list-wraper h3 {
+    margin-left: 50px;
+  }
+  
+  .food-list-menu li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: arial;
+  }
+  
+  .food-list-menu li a {
+    color: white;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color:#922B21;
+    text-decoration: none;
+  }
+  
+  .food-image-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .food-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 40px;
+  }
+  
+ 
+/*booking*/ 
+  
+
+i {
+  vertical-align: middle;
+}
+.slideshow {
+  position: relative;
+}
+.slide {
+  animation: fade 1s;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+.slide img {
+  animation: zoom 6s linear;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.arrow {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  transition: .4s;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+}
+.arrow:hover {
+  background: white;
+  color: black;
+}
+#arrow-right i.fa {
+  position: relative;
+  right: -4px;
+  top: -3px;
+}
+#arrow-left i.fa {
+  position: relative;
+  left: -4px;
+  top: -3px;
+}
+
+#arrow-right {
+  right: 0;
+}
+.content {
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+.slide1 .content {
+  color: white;
+  left: 100px;
+  max-width: 500px;
+}
+@keyframes fade {
+  from{ opacity: 0.4 }
+  to{ opacity: 1 }
+}
+@keyframes zoom {
+  from {transform: scale(1)}
+  to {transform: scale(1.5)}
+}
+
+* {
+  box-sizing: border-box;
+}
+.slide2 .content {
+  right: 100px;
+}
+
+.contact-form {
+  animation: slideUp .5s;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 12px solid rgb(33, 51, 100);
+  padding: 10px 30px 10px;
+  width: 450px;
+}
+.contact-form h2 {
+  color: rgb(33, 51, 100);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.contact-form .wrapper {
+}
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+@keyframes slideUp{
+  0%{
+    transform: translateY(150px) 
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.contact-form input, .contact-form select, textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  resize: none;
+}
+input.submit, .slide1 .content .btn {
+  border: none;
+  background: #922B21;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+@media (max-width: 900px) {
+   .slide2 .content {
+    right: 50%;
+    transform: translate(50%, -50%);
+  } 
+  .arrow {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 750px) {
+  .content {
+    font-size: 1.5rem;
+  }
+  .slide1 .content {
+    max-width: 250px;
+  }
+  .contact-form {
+    max-width: 300px;
+  }
+  .contact-form .box50 {
+    width: 100%;
+  }
+  .arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .content {
+    font-size: 1rem;
+  }
+  .contact-form {
+    display: none;
+  }
+  .contact-form .box50 {
+    width: 100%;
+  }
+  .slide {
+    height: 60vh;
+  }
+}
+
+.box50 {
+  width: 45%;
+}
+.box100 {
+  width: 100%;
+}
+
+/* box chifs */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family-1: "Vollkorn", serif;
+  --font-family-2: "Baloo Bhai 2", cursive;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-1);
+  font-size: 1.6rem;
+}
+
+
+.a{
+ text-align: center;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    height:100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+.button:hover {
+  background-color:#922B21 ;
+}
+
+
+/*animation1*/
+
+.animation1 {
+ align-items: center;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:50px; top:0px;}
+  50%  {left:50px; top:50px;}
+  75%  {left:0px; top:50px;}
+  100% {left:0px; top:0px;}
+}
+
+/* services section */
+#service h1 {
+  margin-top: 4rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.services .box {
+  border: 2px solid #922B21;
+  margin: 4rem;
+  padding: 2rem;
+  border-radius: 2.3rem;
+  background-color: #f0dddd;
+  box-shadow: 3px 3px 1px rgb(161, 161, 161);
+}
+
+.services img {
+  height: 15rem;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (max-width: 860px) {
+  .services {
+    flex-wrap: wrap;
+  }
+
+  .services .box {
+    margin: 3rem;
+  }
+}
+/* client section */
+#client-section h1 {
+  margin-top: 4rem;
+}
+
+#client-section {
+  position: relative;
+  width: 100%;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-items {
+  padding: 2rem;
+}
+.client-items img {
+  width: 10rem;
+  height: 10rem;
+}
+
+@media only screen and (max-width: 570px) {
+  #clients {
+    flex-wrap: wrap;
+  }
+}
+/* contact section */
+/* contact section */
+#contact {
+  position: relative;
+  width: 100%;
+}
+
+#contact h1 {
+  padding-top: 4rem;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(https://gjepc.org/assets/images/inner_banner/contact_us.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margen:20 px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 60vw;
+}
+
+.form-group label {
+  font-size: 2.5rem;
+}
+
+.form-group input,
+textarea {
+  border-radius: 7px;
+}
+[placeholder] {
+  padding: 1rem;
+}
+
+#contact-box .btn {
+  display: flex;
+  margin: auto;
+  margin-bottom: 4rem;
+  
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media only screen and (max-width: 860px) {
+  .form-group {
+    width: 80vw;
+  }
+}
+
+
+
+/* utility classes */
+.h-primary {
+  font-size: 5rem;
+  font-family: var(--font-family-2);
+}
+
+.h-secondary {
+  font-size: 3.5rem;
+  font-family: var(--font-family-2);
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(138, 16, 16);
+  transition: transform 0.3s ease-in-out;
+  font-family: var(--font-family-2);
+}
+
+.btn:hover {
+  transform: translateY(5px);
+}
+
+.center {
+  text-align: center;
+}
+
+@media only screen and (max-width: 860px) {
+  .h-primary {
+    font-size: 5rem;
+  }
+}
+
+
+
+.footer {
+    margin-top: 80px;
+    color: #fff;
+    padding: 40px;
+    background-color:#922B21 ;
+  }
+  
